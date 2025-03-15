@@ -1,0 +1,23 @@
+start:
+B
+cil:
+G
+seznam sousednosti:
+A;S=4;C=3
+B;S=3;C=5
+C;A=3;B=5;U=100
+S;A=4;B=3;U=7
+U;S=7;C=100;P=8
+P;U=8;R=20;E=10
+E;P=10;R=3;G=30
+R;P=20;E=3;G=9
+G;E=30;R=9
+vzdusna vzdalenost od cile:
+A=4
+B=6
+C=3
+S=7
+U=12
+P=10
+E=4
+R=5
