@@ -59,7 +59,6 @@ def search(
     """Function implementing dijkstra/a* algorithm over adjacency matrix of a graph"""
     # create inverted mapping
     index_node: Dict[int, str] = {value: key for key, value in node_index.items()}
-
     # initialize distance at infinity
     distances: Dict[int, float] = {i: float("inf") for i in index_node.keys()}
     distances[node_index[start]] = 0  # set start distance at 0
@@ -116,6 +115,7 @@ def search(
 
     # reverse path to have it start with start
     path.reverse()
+    print(distances[node_index[goal]])
     return path
 
 
